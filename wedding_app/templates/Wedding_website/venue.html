@@ -1,0 +1,16 @@
+{% extends 'Wedding_website/base.html'%}
+{% block content%}
+<br><br><br>
+    <div class="container">
+        <img src="{{venue.image.url}}" class="shadow p-3 mb-1 bg-white rounded alt=" style="height: 400px; width: 100%; object-fit: cover;">
+        <ul class="shadow p-3 mb-5 bg-white rounded" style="width: 80%; margin: 0 auto;text-align: center;"> 
+            <h2>Venue: {{venue.name}}</h2>
+            <div style="margin-top: 5px;">Address: {{venue.address}}</div>
+            <div style="margin-top: 5px;">Phone: {{venue.phone}}</div>
+            <div style="margin-top: 5px;">Email: {{venue.email_address}}</div>
+        </ul>
+        <div class="bg-success" style="width: 80%;margin: 0 auto;;">
+            <a href="{% url 'events' %}" style="color: white; text-decoration: none;"><button class="btn btn-primary"  style="float: right;">Add event</button></a>
+        </div>
+    </div>
+{% endblock %}

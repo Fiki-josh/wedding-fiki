@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap');
+
+
+body {
+    font-family: 'Roboto', sans-serif;
+    padding: 0;
+    margin: 0;
+    
+
+}
+/* Navbar */
+.navbar {
+    background-color: #593527;
+   
+}
+
+.navbar .navbar-brand, .navbar .navbar-collapse ul a {
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.3rem;
+    font-weight: 500;
+}  
+ .navbar .navbar-collapse ul a:hover {
+   color: #A67153;
+   width: auto;
+}  
+.navbar-toggler {
+  outline: none!important;
+  border: none;
+  color: #f1f1f1;
+}
+/* /Navbar */
+
+/* Main content */
+
+.site-title {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+.site-title h1 {
+    font-family: 'nazeefa', sans-serif;
+    font-weight: 500;
+    font-size: 3.8rem;
+    color: #f1f1f1;
+    text-shadow: 2px 1px 0 #000;
+}
+.site-title p {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size: 1rem;
+    color: #f1f1f1;
+    text-shadow: 2px 1px 0 #000;
+}
+
+/* Gallery */
+.gallery-title h1 {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  font-size: 2rem;
+  color: #030a0d;
+
+}
+.gallery-hr {
+  width: 100px;
+  height: 3px;
+  background-color: #030a0d;
+  border-radius: 3rem;
+}
+
+  /* /Gallery */
+
+  /* Contact */
+  .contact-title h1 {
+    font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  font-size: 2rem;
+  color: #030a0d;
+  }
+
+  .left form .form-group label {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size: 1rem;
+    color: #030a0d;
+  }
+  .left form .form-group label input {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 200;
+    font-size: 0.8rem;
+    color: #030a0d;
+  }
+  .submit {
+    background-color: #0e1f26!important;
+    width: 100%;
+    color: #f1f1f1;
+    border-color: #0e1f26!important;
+    
+  }
+  .submit:hover {
+    color: white;
+    background-color: #163947!important;
+  }
+
+  .right h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size: 1.7rem;
+    color: #0e1f26;
+  }
+  .right .socials {
+    text-align: center;
+  }
+  .right .socials a {
+    font-size: 2rem;
+    margin: .3rem;
+    color: #030a0d;
+  }
+  .right .socials .fa-facebook-official:hover {
+    color: #3b5998;
+  }
+  .right .socials .fa-twitter:hover {
+    color: #55acee;
+  }
+  .right .socials .fa-instagram:hover {
+    color:#ac2bac;
+  }
+  .right .address {
+    text-align: center;
+    font-size: 1.3rem;
+    color: #0e1f26;
+  }
+  footer {
+    color: #f1f1f1;
+  }
