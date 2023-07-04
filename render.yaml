@@ -1,11 +1,15 @@
+databases:
+  - name: wedding_project
+    type: sqlite
+
 services:
-  - name: app
-    buildCommand: ./build.sh
-    startCommand: python manage.py runserver 0.0.0.0:$PORT
+  - name: wedding_project
+    buildCommand: "./build.sh"
+    startCommand: "python manage.py runserver 0.0.0.0:$PORT"
     env:
       - key: DATABASE_URL
-        value: sqlite:///db.sqlite3
-databases:
-  - name: db
-    type: sqlite
-    diskSize: 100
+        value: "sqlite:///db.sqlite3"
+      - key: SECRET_KEY
+        generateValue: true
+      - key: WEB_CONCURRENCY
+        value: "4"
