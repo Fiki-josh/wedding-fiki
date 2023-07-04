@@ -9,11 +9,8 @@ services:
     buildCommand: "./build.sh"
     startCommand: "python manage.py runserver 0.0.0.0:$PORT"
     env:
-      - key: DATABASE_URL
-        value: "sqlite:///db.sqlite3"
-      - key: SECRET_KEY
-        generateValue: true
-      - key: WEB_CONCURRENCY
-        value: "4"
+      DATABASE_URL: "sqlite:///db.sqlite3"
+      SECRET_KEY: 'django-insecure-^rwa-)v*@1e1hixpgve+tyj(3mhc*is@g(6(69^88mmb_cn5s)'
+      WEB_CONCURRENCY: "4"
 
 
