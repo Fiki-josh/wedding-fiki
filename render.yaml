@@ -1,6 +1,7 @@
 databases:
   - name: wedding_project
-    type: sqlite
+    databaseName: wedding_project
+    user: wedding_project
 
 services:
   - type: web
@@ -14,4 +15,5 @@ services:
         generateValue: true
       - key: WEB_CONCURRENCY
         value: "4"
+
 
