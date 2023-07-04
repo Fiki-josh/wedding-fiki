@@ -1,9 +1,11 @@
-version: 1
-build:
-  command: ./build.sh
-start:
-  command: python manage.py runserver 0.0.0.0:$PORT
+services:
+  - name: app
+    buildCommand: ./build.sh
+    startCommand: python manage.py runserver 0.0.0.0:$PORT
+    env:
+      - key: DATABASE_URL
+        value: sqlite:///db.sqlite3
 databases:
-  - name: default
+  - name: db
     type: sqlite
-
+    diskSize: 100
