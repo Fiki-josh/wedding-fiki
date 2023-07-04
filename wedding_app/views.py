@@ -1,5 +1,5 @@
 from django.shortcuts import render
-from .forms import MyEventForm
+from .forms import *
 from django.http import HttpResponse
 from .models import *
 # from django.template import loader
@@ -36,4 +36,18 @@ def events(request):
         'form': form
     }
      return render(request,'Wedding_website/events.html',context)
+def AddVenue(request):
+     if request.method == 'POST':
+        form = MyVenueForm(request.POST)
+        if form.is_valid():
+            form.save()
+          #   return redirect('myevent_list')
+        else:
+          print(form.errors)
+     else:
+          form = MyVenueForm()
+     context = {   
+        'form': form
+    }
+     return render(request,'Wedding_website/addvenue.html',context)
 # Create your views here.
